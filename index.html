@@ -93,6 +93,7 @@
 
         for(let i in feed){
             for(let j in feed[i]) {
+                console.log(feed[i]);
                 if(feed[j][i].message){
                     output += `<div class="well">${feed[j][i].message}</div>`;
                 }   
