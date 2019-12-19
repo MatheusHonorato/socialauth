@@ -92,12 +92,10 @@
       function buildFeed(feed){
 
         for(let i in feed){
-            for(let j in feed[i]) {
-                console.log(feed[i]);
-                if(feed[i].message){
-                    output += `<div class="well">${feed[i].message}</div>`;
-                }   
-            }
+            console.log(feed[i]);
+            if(feed[i].message){
+                output += `<div class="well">${feed[i].message}</div>`;
+            }   
         }
 
         document.getElementById('feed').innerHTML = output;
