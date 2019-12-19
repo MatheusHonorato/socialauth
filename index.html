@@ -53,7 +53,7 @@
                         person.picture = userData.picture.data.url;
                     });
                     FB.api('/me/accounts', function(response){ 
-                        console.log("TESTE: ", response.data.length);
+                        console.log("TESTE: ", response.data);
 
                         for(let i=0; i < response.data.length; i++) {
 
